@@ -18,11 +18,11 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
-  function random(max) {
+  function calculateRandomNumber(max) {
     let result = Math.floor(Math.random() * max);
     return result;
   }
-  excuse.innerHTML = `${who[random(who.length)]} ${
-    action[random(action.length)]
-  } ${what[random(what.length)]} ${when[random(when.length)]}`;
+  excuse.innerHTML = `${who[calculateRandomNumber(who.length)]} ${
+    action[calculateRandomNumber(action.length)]
+  } ${what[calculateRandomNumber(what.length)]} ${when[calculateRandomNumber(when.length)]}`;
 };
